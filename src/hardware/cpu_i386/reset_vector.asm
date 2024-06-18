@@ -1,0 +1,2 @@
+BITS 16
+    jmp 0xf000:0x0 ; jumps to BIOS which is at 0xf000:0x0 (physical addr 0xf0000)
