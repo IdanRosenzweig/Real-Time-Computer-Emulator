@@ -4,8 +4,6 @@
 This project is a real time emulator for a computer containing a cpu, mouse, keyboard, screen, (floppy) disk driver and BIOS firmware.
 The emulator implements all the necessary internals and functionalities to simulate the real life behavior of a computer machine.
 
-The emulator is capable of loading small operating systems, provided as floppy disk files.
-
 Once started, the emulator would boot the machine up via the reset vector and firmware, and launch a window displaying the computer's screen output.
 When the window is in focus, the emulator would listen to the input of the mouse and keyboard like regular hardware interrupts.
 
@@ -18,6 +16,10 @@ The implemented components include:
 * Floppy disk driver
 * small BIOS firmware
 
+The emulator is currently capable of loading small operating systems, provided as floppy disk files.
+
+<br>
+This project also contains implementation for two small, sample operating systems that can be complied and tested quickly against the emulator.
 
 ## build
 
