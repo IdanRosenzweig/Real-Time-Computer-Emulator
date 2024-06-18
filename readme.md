@@ -1,8 +1,8 @@
-# Computer emulator
+# Real Time Computer Emulator
 
 ## overview
-This project is a detailed emulator for a computer containing a cpu, mouse, keyboard, screen, (floppy) disk driver and BIOS firmware.
-The project implements various computer-internal components, all connected together to simulate the real life behavior of the machine.
+This project is a real time emulator for a computer containing a cpu, mouse, keyboard, screen, (floppy) disk driver and BIOS firmware.
+The emulator implements all the necessary internals and functionalities to simulate the real life behavior of a computer machine.
 
 The emulator is capable of loading small operating systems, provided as floppy disk files.
 
@@ -18,7 +18,9 @@ The implemented components include:
 * Floppy disk driver
 * small BIOS firmware
 
+
 ## build
+
 to build the emulator, execute the `build.sh` script at the rot directory of the project.
 this would create a directory `build` which would contain:
 * `reset_vector.bin`: a file contain the reset vector machine code for the processor
@@ -28,6 +30,6 @@ this would create a directory `build` which would contain:
 the project also contains sample operating systems to be tested on the emulator.
 execute the `build_sample_os.sh` script with one argument:
 * `small_os`: this build a small os with graphics (sourced `samples/small_ls`)
-* `tiny_os`: this build a tiny, minimalist os with just text outputed to the screen (sourced `samples/tiny_os`)
+* `tiny_os`: this build a tiny, minimalist OS which just outputs text to the screen using BIOS (sourced `samples/tiny_os`)
 
-to clean all build, execute the `clean.sh` script.
+to clean all build, execute the `clean.sh` script
